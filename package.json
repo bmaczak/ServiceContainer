@@ -1,0 +1,11 @@
+{
+    "author": {
+        "email": "maczak.balazs@gmail.com",
+        "name": "Balazs Maczak",
+        "url": "https://bithussar.com"
+    },
+    "description": "A minimalist ServiceLocator implementation for Unity with scoping support.",
+    "displayName": "ServiceContainer",
+    "name": "com.bmaczak.servicecontainer",
+    "version": "1.0.0"
+}
