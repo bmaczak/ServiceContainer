@@ -62,3 +62,8 @@ This is useful for services that need to be available for all of the application
 3. Add any installers you need
 
 The GlobalServiceContainer uses the RuntimeInitializeOnLoadMethod attribute, this ensures that the global services will be installed before any scene service.
+
+
+### Sample
+
+A simple sample on how to use the package is available via the Package Manager.
