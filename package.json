@@ -7,5 +7,12 @@
     "description": "A minimalist ServiceLocator implementation for Unity with scoping support.",
     "displayName": "ServiceContainer",
     "name": "com.bmaczak.servicecontainer",
-    "version": "1.0.0"
+    "version": "1.0.0",
+	"samples": [
+        {
+            "displayName": "Clicker game",
+            "description": "A simple clicker game showing basic usage for the package",
+            "path": "Samples~/ClickerGame"
+        }
+    ]
 }
