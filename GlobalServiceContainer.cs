@@ -11,6 +11,7 @@ public class GlobalServiceContainer : MonoServiceContainer
 
     private void OnAppStart()
     {
+        ServiceLocator.Clear(); //this helps if some services got stuck in Editor
         Install();
         Application.quitting += OnAppQuit;
     }
