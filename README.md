@@ -63,7 +63,10 @@ This is useful for services that need to be available for all of the application
 
 The GlobalServiceContainer uses the RuntimeInitializeOnLoadMethod attribute, this ensures that the global services will be installed before any scene service.
 
+### Initialization and disposal of services
+Often you need to do some initialization on the services you install. If your service is a MonoBehaviour in the scene you can use the normal lifecycle functions like Awake and Start. This is possible because the ServiceContainer installs the services before other Awake functions are called. For non-MonoBehaviour services you can use the IInitializable interface. After installing all services, the container calls Initialize() for all of them that implement the interface. This means that if you have services A and B installed in the same container you can use ServiceLocator.Get\<B>() inside A.Initialize().
 
+Similarly before uninstalling services the ServiceContainer goes through all of them and callses Dispose() on all services that implement the IDisposable interface.
 ### Sample
 
 A simple sample on how to use the package is available via the Package Manager.
